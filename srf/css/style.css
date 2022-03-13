@@ -1,0 +1,461 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.preloader{
+   z-index: 100;
+ --bg-color: #666b8f;
+ --size: 200px;
+ --first-color: #04eeff;
+ --second-color: #19c8d4;
+ --thrid-color: #2ba2aa;
+ --fourh-color: #2d9097;
+ --fifth-color: #04eeff;
+ --thickness: 8px;
+ --duration: 1s;
+ position: fixed;
+ width: 100%;
+ height: 100%;
+ background-color: var(--bg-color);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: var(--duration);
+ }
+ .preloader__content{
+     position: relative;
+     width: var(--size);
+     height: var(--size);
+     
+
+ }
+ .preloader__first,
+ .preloader__second,
+ .preloader__thrid,
+ .preloader__fourh,
+ .preloader__fifth{
+     z-index: 101;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     border-radius: 90%;
+     animation: var(--duration) linear infinite ease;
+ }
+ .preloader__first{
+    border-top: var(--thickness) solid var(--first-color);
+    animation-name: first;}
+.preloader__second{
+    border-bottom: var(--thickness) solid var(--second-color);
+    animation-name: second;}
+.preloader__thrid{
+    border-left: var(--thickness) solid var(--thrid-color);
+    animation-name: thrid;}
+.preloader__fourh{
+    border-left: var(--thickness) solid var(--fourh-color);
+    animation-name: fourh;}
+.preloader__fifth{
+    border-top: var(--thickness) solid var(--fifth-color);
+    animation-name: fifth;}
+
+@keyframes first{
+    from{transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);}
+    to{transform: rotateX(360deg) rotateY(-180deg) rotateZ(360deg);}
+}
+@keyframes second{
+    from{transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);}
+    to{transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
+}
+@keyframes thrid{
+    from{transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);}
+    to{transform: rotateX(90deg) rotateY(360deg) rotateZ(360deg);}
+}
+@keyframes fourh{
+    from{transform: rotateX(0deg) rotateY(-90deg) rotateZ(0deg);}
+    to{transform: rotateX(360deg) rotateY(90deg) rotateZ(360deg);}
+}
+@keyframes fifth{
+    from{transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);}
+    to{transform: rotateX(180deg) rotateY(360deg) rotateZ(360deg);}
+}
+
+
+
+nav{
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+    background: #41445a;
+    position: fixed;
+    
+}
+.logo{
+    font-family: 'Rubik One', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    background: #666b8f;
+    display: table;
+    color:#05deee;
+    border-radius: 5px;
+    font-weight: bold;
+    float: left;
+    margin: 10px;
+    padding: 0% 5%;
+}
+.menu{
+    float: left;
+    
+}
+.menu li{
+    
+    float:left;
+    line-height: 60px;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 30px;
+    text-transform:uppercase;
+    
+}
+.main__pool{
+    
+    width: 100%;
+    height: 100%;
+    background: url(../img/tyn.png) 90% 100%/auto 85% no-repeat , url(../img/fon.jpg) center/cover no-repeat;
+    box-shadow: 2px -20px 50px #000 inset;
+    background-attachment: fixed;
+}
+.title__container{
+    
+    width: 100%;
+    float: left;
+    color: #344077;
+    text-align: left;
+    letter-spacing: 4px;
+}
+.title__container h1{
+    font-family: 'Rubik One', sans-serif;  
+    font-size: 65px;
+    font-weight: bold;
+
+}
+.title__container h4{
+    margin-top: 10px;
+    font-size: 25px;
+    color: #6d7682;
+}
+.title__container input{
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid #41445a;
+    background: none;
+    border-radius: 5px;
+    padding: 0px 5%;
+    margin: 20px 14px 0px 14px;
+    height: 40px;
+    box-shadow: 1px 1px 2px #05deee;
+    
+}
+
+/*все заголовки */
+h2{
+    padding-top: 100px ;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h6{
+    display:block;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #05deee ;
+    
+}
+
+/*block about company */
+/*ава*/
+.case1 h5{
+    background: url(../img/kek.png) center/auto 100% no-repeat;
+    display:inline-block;
+    border: 3px solid #000;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 60px 856px 10px 856px;
+}
+
+.case1 p{
+    
+    font-size: 16px;
+    margin: 0px 600px 40px 600px;
+}
+.case1 input{
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #41445a;
+    background: none;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin: 0px 825px 100px 825px;
+    height: 40px;
+    box-shadow: 2px 2px 5px #000;
+}
+.case2{
+    
+    width: 100%;
+    height: 550px;
+    box-shadow: 1px -1px 10px #000 inset;
+    background:
+                url(../img/ноут.png) 310px 270px/auto 10% no-repeat ,
+                url(../img/знак.png) 735px 270px/auto 10% no-repeat , 
+                url(../img/ракета.png) 1160px 270px/auto 10% no-repeat , 
+                url(../img/граммофон.png) 1580px 270px/auto 10% no-repeat , 
+                url(../img/foncase2.jpg) center/auto 100% fixed;;
+    
+}
+.case2li li{
+    
+    padding: 220px 0px 0px 0px;
+    width: 140px;
+    float: left;
+    font-size: 16px; 
+    text-align: center;
+    margin-left: 280px;
+    
+}
+.case2 h7{
+    padding: 10px 0px;
+    font-size: 20px;
+    color: #05deee;
+}
+.case3bg{
+    
+    height: 600px;
+    margin: 40px auto;
+    
+    background-image:  url(../img/фотка.png);
+}
+/*bloc projects*/
+.case3t p{
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 16px;
+    color: #6d7682;
+    
+}
+.case3menu{
+    height: 100px;
+    float: left;
+    width: 100px; 
+    margin: 0px 0px 0px 388px;
+    padding: 0px 0px 0px 0px;   
+}
+.case3menu h3{
+    margin: 0px 0px 5px 0px;
+    font-size: 25px;
+
+}
+.case3menu input{
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #63b5ae;
+    background: #63b5ae;
+    border-radius: 8px;
+    padding: 10px 0px 10px 0px;
+    margin: 20px 0px 100px 0px;
+    height: 40px;
+    box-shadow: 2px 2px 5px #000;
+}
+.case3-1 h4{  
+    font-size: 25px;
+}
+.case3-1 p{
+    font-size: 16px;
+    text-align: left;
+    margin: 0px 300px 0px 0px;
+    padding: 0px 388px 0px 0px;
+}
+.case4{
+    margin: 60px 494px 0px 494px;  
+}
+.case4 h3{
+    text-align: left;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+.case4 select{
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #63b5ae;
+    background: #63b5ae;
+    border-radius: 8px;
+    padding: 10px 800px 10px 0px;
+    margin: 20px 0px 10px 0px;
+    height: 40px;
+    
+}  
+.case4 h4{
+    height: 10px;
+    float: left;
+    width: 100px; 
+    box-shadow: 2px 2px 5px #000; 
+} 
+.case4 td{
+    height: 20px;
+    padding: 0px 840px 10px 0px;
+    text-align: justify;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.footr{
+    
+    margin: 50px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 550px;
+    box-shadow: 1px -1px 10px #000 inset;
+    background: url(../img/ноут.png) 310px 270px/auto 10% no-repeat ,
+    url(../img/знак.png) 735px 270px/auto 10% no-repeat , 
+    url(../img/ракета.png) 1160px 270px/auto 10% no-repeat , 
+    url(../img/граммофон.png) 1580px 270px/auto 10% no-repeat,
+    url(../img/фон.png) center/auto 100% fixed;
+}
+
+                
+
+.footr__container li{
+    padding: 200px 0px 0px 0px;
+    width: 140px;
+    float: left;
+    font-size: 18px; 
+    text-align: center;
+    margin-left: 280px;
+    text-transform: uppercase;  
+}
+.footr__container h4{
+    font-size: 25px;
+    font-weight: bold;
+    color: #05deee;
+
+}
+.case5{
+    background: url(../img/kek.png) center/auto 100% no-repeat;
+    display:inline-block;
+    border: 3px solid #000;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 60px 856px 10px 856px;
+}
+.case5__container{
+    margin: 0px 494px 0px 494px;  
+    padding: 20px 0px;
+    font-size: 16px;
+    text-align: center;
+}
+.case5__container p{
+    margin: 20px 0px 40px 0px;
+}
+.case6{
+    
+    
+    margin: 40px 0px 0px 0px;
+    height: 800px;
+    width: 100%;
+    background: url(../img/гео.png) 680px 250px/auto 5% no-repeat ,
+                url(../img/конверт.png) 900px 250px/auto 5% no-repeat,
+                url(../img/труба.png) 1140px 250px/auto 5% no-repeat,
+                url(../img/Фон2.png) 100% no-repeat; 
+}
+.case6 h2{
+    color: #fff;
+}
+.case6__container{
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    margin: 0px 500px 0px 500px;
+}
+
+.case6__container li{
+    
+    padding: 100px 0px 0px 0px;
+    float: left;
+    font-size: 18px; 
+    text-align: center;
+    margin-left: 76px;
+    
+
+}
+.case7{
+    color: #fff;
+    padding: 20px 0px;
+}
+.case7__container{
+    text-align: center;  
+    font-size: 20px;
+}
+.case7__container p{
+    margin: 20px 0px;
+    
+}
+.case7__container input{
+    text-align: center;
+    font-size: 16px;
+    margin: 0px 0px;
+    height: 40px;
+    padding: 10px 80px 10px 70px;
+    border-radius: 10px;
+}
+.case7__container textarea{
+    height: 100px;
+    margin: 10px 0px;
+    width: 720px;
+    border-radius: 10px;
+}
+
+@media(max-width:1200px){
+    .title__container, .title__container h4, .title__container input{
+        color:#fff;
+        position: relative;
+        z-index: 3;
+    }
+    .main__pool{
+        position: relative;
+    }
+    .main__pool::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+

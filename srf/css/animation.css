@@ -1,0 +1,107 @@
+.menu li a{
+    color: #fff;
+    transition: all 0.1s;
+    transform: scale(1);
+    display: inline-block;
+}
+.menu li a:hover{
+    color:aqua;
+    
+}
+.menu li a:active{
+    transform: scale(1.1);
+}
+.title__container input,
+.case1 input,
+.case3menu input,
+.case7__container input{
+    transition: all 0.2s;
+    transform: scale(1);
+    display: inline-block;
+}
+.title__container input:hover,
+.case1 input:hover,
+.case3menu input:hover,
+.case7__container input:hover{
+    background: #41445a;
+    color: aqua;
+}
+.title__container input:active,
+.case1 input:active,
+.case3menu input:active,
+.case7__container input:active{
+    transform: scale(1.1);
+}
+
+@keyframes move_logo{
+    from{
+        
+        opacity: 0;
+    }
+    to{
+        
+        opacity: 1;
+    }
+}
+.logo{
+    -webkit-animation: move_logo 3s ease;
+    -o-animation: move_logo 3s ease;
+    animation: move_logo 3s ease; 
+    animation-delay: 1s;
+}
+@keyframes move_menu{
+    from{
+        opacity: 0;
+        margin-top: -100px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+.menu li{
+    -webkit-animation: move_menu 0.2s forwards ease;
+    -o-animation: move_menu 0.2s forwards ease;
+    animation: move_menu 0.2s forwards ease; 
+    opacity: 0; 
+}
+.menu li:nth-child(1){
+    animation-delay: 1.5s;
+}
+.menu li:nth-child(2){
+    animation-delay: 1.7s;
+}
+.menu li:nth-child(3){
+    animation-delay: 1.9s;
+}
+.menu li:nth-child(4){
+    animation-delay: 2.1s;
+}
+.menu li:nth-child(5){
+    animation-delay: 2.3s;
+}
+.title__container{
+    -webkit-animation: move_main_pool 4 s ease forwards;
+    -o-animation: move_main_pool 4s ease forwards;
+    animation: move_main_pool 4s ease forwards; 
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+@keyframes move_main_pool{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1 ;  
+    }
+}
+.h{
+    color: #fff;
+    transition: all 0.1s;
+    transform: scale(1);
+    display: inline-block;
+}
+.h:hover{
+    transform: scale(1.2);
+}
