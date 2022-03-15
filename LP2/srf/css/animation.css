@@ -96,15 +96,12 @@
         opacity:1 ;  
     }
 }
-.case3menu input{
-    transition: all 0.2s;
+.h{
+    color: #fff;
+    transition: all 0.1s;
     transform: scale(1);
     display: inline-block;
 }
-.case3menu input:hover{
-    background: #41445a;
-    color: aqua;
-}
-.case3menu input:active{
-    transform: scale(1.1);
+.h:hover{
+    transform: scale(1.2);
 }

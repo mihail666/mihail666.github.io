@@ -1,15 +1,16 @@
 body{
-    font-family: Arial, Helvetica, sans-serif   ;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .preloader{
-   z-index: 100;
+   z-index: 101;
  --bg-color: #666b8f;
  --size: 200px;
  --first-color: #04eeff;
- --second-color: #04eeff;
- --thrid-color: #04eeff;
- --fourh-color: #04eeff;
+ --second-color: #19c8d4;
+ --thrid-color: #2ba2aa;
+ --fourh-color: #2d9097;
  --fifth-color: #04eeff;
  --thickness: 8px;
  --duration: 1s;
@@ -81,13 +82,16 @@ body{
 
 
 nav{
-    z-index: 90;
+    z-index: 100;
     width: 100%;
     height: 60px;
     background: #41445a;
     position: fixed;
+    
+    
 }
 .logo{
+    
     font-family: 'Rubik One', sans-serif;
     font-size: 28px;
     text-transform: uppercase;
@@ -95,25 +99,27 @@ nav{
     display: table;
     color:#05deee;
     border-radius: 5px;
-    padding: 10px 10px 10px 10px;
-    margin: 5px 0px 0px 420px;
     font-weight: bold;
     float: left;
+    margin: 10px;
+    padding: 0% 5%;
 }
 .menu{
     float: left;
-    padding-left: 540px;
+    
 }
 .menu li{
+
     float:left;
     line-height: 60px;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     margin-right: 30px;
-    text-transform: uppercase;
+    text-transform:uppercase;
+    
 }
 .main__pool{
-    z-index: 91;
+    
     width: 100%;
     height: 100%;
     background: url(../img/tyn.png) 90% 100%/auto 85% no-repeat , url(../img/fon.jpg) center/cover no-repeat;
@@ -121,120 +127,121 @@ nav{
     background-attachment: fixed;
 }
 .title__container{
+    
+    width: 100%;
     float: left;
-    margin: 405px 0px 0px 410px;
     color: #344077;
-    text-align: center;
+    text-align: left;
+    letter-spacing: 4px;
 }
 .title__container h1{
-    font-size: 60px;
+    
+    font-family: 'Rubik One', sans-serif;  
+    font-size: 65px;
     font-weight: bold;
 
 }
 .title__container h4{
-    margin-top: 40px;
-    font-size: 25px;
+    margin-top: 10px;
+    font-size: 25px;    
     color: #6d7682;
 }
 .title__container input{
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     border: 2px solid #41445a;
     background: none;
     border-radius: 5px;
-    padding: 0px 20px;
-    margin: 50px 14px 0px 14px;
+    padding: 0px 5%;
+    margin: 20px 14px 0px 0px;
     height: 40px;
     box-shadow: 1px 1px 2px #05deee;
     
 }
 
-/*все заголовки */
+
 h2{
-    padding-top: 100px ;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-h6{
-    display:block;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #05deee ;
+    margin-top: 10px;
     
+    padding: 5% 0px 1% 0px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-/*block about company */
+/*block about*/
 /*ава*/
-.case1 h5{
+
+.ava{
+    
     background: url(../img/kek.png) center/auto 100% no-repeat;
     display:inline-block;
     border: 3px solid #000;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 195px;
+    height: 195px;
     overflow: hidden;
-    margin: 60px 856px 10px 856px;
+    
+    
+    
 }
 
 .case1 p{
+    padding: 3%;
+    text-align: justify;
+    font-size: 14px;
     
-    font-size: 16px;
-    margin: 0px 600px 40px 600px;
 }
 .case1 input{
-    font-size: 16px;
-    text-align: center;
+    padding: 2%;
+    font-size: 20px;
+    margin-bottom: 10%;
     border: 2px solid #41445a;
     background: none;
     border-radius: 5px;
     padding: 0px 20px;
-    margin: 0px 825px 100px 825px;
+    
     height: 40px;
-    box-shadow: 2px 2px 5px #000;
+    
 }
 .case2{
     
-    width: 100%;
-    height: 550px;
-    box-shadow: 1px -1px 10px #000 inset;
-    background:
-                url(../img/ноут.png) 310px 270px/auto 10% no-repeat ,
-                url(../img/знак.png) 735px 270px/auto 10% no-repeat , 
-                url(../img/ракета.png) 1160px 270px/auto 10% no-repeat , 
-                url(../img/граммофон.png) 1580px 270px/auto 10% no-repeat , 
-                url(../img/foncase2.jpg) center/auto 100% fixed;;
+    flex: 0 0 auto;
+    padding: 0% 20%;
+    font-size: 16px;
+    height: 700px;
     
+    background: url(../img/foncase2.jpg) center/auto 100% fixed;
 }
-.case2li li{
-    
-    padding: 220px 0px 0px 0px;
-    width: 140px;
-    float: left;
-    font-size: 16px; 
-    text-align: center;
-    margin-left: 280px;
-    
+
+
+.case2 h2{
+    padding: 10% 10%;
+
 }
 .case2 h7{
-    padding: 10px 0px;
+    
+    
     font-size: 20px;
     color: #05deee;
+    text-transform: uppercase;
 }
+.col p{
+    font-size: 14px;
+}
+
+
+
 .case3bg{
     
     height: 600px;
-    margin: 40px auto;
-    
-    background-image:  url(../img/фотка.png);
+    width: 1800px;
+    background:  url(../img/фотка.png) center/auto 100% no-repeat;
 }
 /*bloc projects*/
 .case3t p{
-    margin: 20px 0px;
+    
     text-align: center;
     font-size: 16px;
     color: #6d7682;
@@ -404,14 +411,52 @@ h6{
     font-size: 16px;
     margin: 0px 0px;
     height: 40px;
-    padding: 20px 80px;
+    padding: 10px 80px 10px 70px;
     border-radius: 10px;
 }
 .case7__container textarea{
     height: 100px;
-    margin: 10px;
+    margin: 10px 0px;
     width: 720px;
     border-radius: 10px;
+}
+
+@media(max-width:1200px){
+    .title__container, .title__container h4, .title__container input{
+        color:rgb(115, 215, 223);
+        font-size: 20px;
+        position: relative;
+        z-index: 3;
+    }
+    .title__container h1{
+        font-size: 40px;
+    }
+    .main__pool{
+        position: relative;
+    }
+    .main__pool::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    .case2 h7{
+        font-size: 14px;
+    }
+
+    
+}
+.stylecollapse {
+    display: none;
+}
+@media(max-width:500px){
+    .stylecollapce{
+        display: none;
+    }
 }
 
 
