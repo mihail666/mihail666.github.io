@@ -1,0 +1,12 @@
+
+    
+.main{
+    padding: 30px;
+    background: url(../img/kek.png) center/auto 100% no-repeat;
+    display: block;
+    border: 5px solid #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
