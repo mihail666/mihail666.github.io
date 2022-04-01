@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/slider/media.css">
     <link rel="stylesheet" href="css/slider/style_slider.css">
     <script src="libs/jquery/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    
     <title>WebCraft</title>
 </head>
 
@@ -256,21 +256,34 @@
                        <div class="costing__content__elements">
                            <div>
                             <h4>site type</h4>
-                                <select name="tab" class="item">        
-                                    <option value="value1">lending page</option>
-                                    <option value="value2">site wizitka</option>
-                                    <option value="value3">online store</option>
-                                </select>
+                                <select name="select" class="item" > 
+                                    <option name="type" value="0" selected >select</option>      
+                                    <option name="type" value="1.2">lending page</option>
+                                    <option name="type" value="1.5">site wizitka</option>
+                                    <option name="type" value="2.0">online store</option>
+                                </select> 
                             </div>
                             <div>
                             <h4>adaptability</h4>
-                                <select name="tab" class="item">
-                                    <option value="value1">lending page</option>
-                                    <option value="value2">site wizitka</option>
-                                    <option value="value3">online store</option>
+                                <select name="select" class="item">
+                                    <option name="adapt" value="0" selected >select</option>
+                                    <option name="adapt" value="1.2">only for pc </option>
+                                    <option name="adapt" value="2.0">for pc and tablets</option>
+                                    <option name="adapt" value="3.0">for all types of devices</option>
                                 </select>
                             </div>
-                            <a href="#" class="btn">find out the price</a>
+                            <h4>production time</h4>
+                                <select name="select" class="item">
+                                    <option name="time" value="0" selected >select</option>
+                                    <option name="time" value="1.1">3 weeks</option>
+                                    <option name="time" value="1.2">2 weeks</option>
+                                    <option name="time" value="1.3">1 weeks</option>
+                                </select>
+                            </div>
+                            <a class="btn" onclick="location.reload()">find out the price</a>
+                            <a href="#contacts" class="btn"><span id="price">0</span> USD</a>
+                            
+
                         </div> 
                         
                     </div>
@@ -468,7 +481,9 @@
             </div>
         </div>
     </section>
+    
     <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/slider.js"></script>
 </body>
 
