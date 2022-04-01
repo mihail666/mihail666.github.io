@@ -3,14 +3,14 @@
 .preloader{
     z-index: 1001;
   --bg-color: #000000;
-  --size: 200px;
+  --size: 50px;
   --first-color: #00eeff;
   --second-color: #19c8d4;
   --thrid-color: #2ba2aa;
   --fourh-color: #2d9097;
   --fifth-color: #04eeff;
   --thickness: 2px;
-  --duration: 1s;
+  --duration: 1.2s;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -105,10 +105,10 @@
     
     
  }
-.sticky
+header.sticky
  {  
     padding: 5px 100px;
-    background: #ffffff;
+    background-color: #ffffff;
     border-bottom: 3px solid rgba(0,0,0,.1);
  }
  
